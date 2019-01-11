@@ -1,0 +1,22 @@
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #000;
+    animation-name: bouncing;
+    animation-duration: 1.5s;
+    animation-delay: -1s;
+    animation-timing-function: cubic-bezier(0.285, 0.065, 1.000, 0.285);
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bouncing {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: 150px;
+    }
+}

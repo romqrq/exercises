@@ -1,0 +1,46 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #e84610;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+.box2 {
+    width:100px;
+    height: 100px;
+    background-color: #000;
+    animation-name: spinning;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.box:hover {
+    animation-name: doublesize;
+    
+}
+
+@keyframes doublesize {
+    0% {
+        
+    }
+    100% {
+        transform: scale(2);
+        margin: 10px;
+    }
+}
+
+.box2:hover {
+    animation-name: spinning;
+}
+
+@keyframes spinning {
+    0% {
+        
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
